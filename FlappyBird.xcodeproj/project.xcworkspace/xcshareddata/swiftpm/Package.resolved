@@ -1,0 +1,15 @@
+{
+  "originHash" : "136b60cfd5c309853faccdd5c83772e67239fd19e3f628a9a80641092e23c6f9",
+  "pins" : [
+    {
+      "identity" : "apple-silicon-accelerometer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vnixx/apple-silicon-accelerometer.git",
+      "state" : {
+        "revision" : "7153f022c2a419f8e655c2d58e42c42e8f5817e0",
+        "version" : "0.1.0"
+      }
+    }
+  ],
+  "version" : 3
+}
