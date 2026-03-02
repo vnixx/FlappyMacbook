@@ -4,7 +4,7 @@
 
 ## Demo
 
-
+https://github.com/user-attachments/assets/62a7f5a7-55f4-42e3-af1f-baa7d1530e5c
 
 ## How It Works
 
@@ -15,7 +15,6 @@
 ## Requirements
 
 - macOS 14.0+, Apple Silicon MacBook
-- 传感器访问需要 root 权限：`sudo ./FlappyBird.app/Contents/MacOS/FlappyBird`
 
 ## Dependencies
 
