@@ -4,9 +4,7 @@
 
 ## Demo
 
-https://github.com/user-attachments/assets/demo.mp4
 
-<video src="demo.mp4" width="600" controls></video>
 
 ## How It Works
 
