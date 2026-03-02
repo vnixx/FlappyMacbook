@@ -1,20 +1,29 @@
-[![BuddyBuild](https://dashboard.buddybuild.com/api/statusImage?appID=55dd277abbda430100397040&branch=master&build=latest)](https://dashboard.buddybuild.com/apps/55dd277abbda430100397040/build/latest)
+# Flappy MacBook
 
-# FlappySwift
+用 MacBook 开合盖角度控制 Flappy Bird 小鸟高度的 macOS SpriteKit 游戏，基于 Apple Silicon 未公开传感器实时读取盖合角度并线性映射到画面位置。
 
-An implementation of Flappy Bird in Swift for iOS 8.
+## Demo
 
-![FlappySwift](http://i.imgur.com/1NLoToU.gif)
+https://github.com/user-attachments/assets/demo.mp4
 
-# Notes
+<video src="demo.mp4" width="600" controls></video>
 
-We're launching a course [Game Programming with Swift](https://fullstackedu.com)
+## How It Works
 
-If you are interested in early access to the course, head to [fullstackedu.com](https://www.fullstackedu.com) and _enter in your email in the signup box at the bottom of the page_ to be notified of updates on the course itself.
+- 盖合角度 30°–90° 线性映射到游戏画面高度
+- `currentY = currentY × 0.7 + targetY × 0.3` lerp 平滑
+- 传感器不可用时自动降级为鼠标控制
 
-# Authors
+## Requirements
 
-- Nate Murray - [@eigenjoy](https://twitter.com/eigenjoy)
-- Ari Lerner - [@auser](https://twitter.com/auser)
+- macOS 14.0+, Apple Silicon MacBook
+- 传感器访问需要 root 权限：`sudo ./FlappyBird.app/Contents/MacOS/FlappyBird`
+
+## Dependencies
+
+- [AppleSiliconSensor](https://github.com/vnixx/apple-silicon-accelerometer) — Apple Silicon 未公开传感器读取
+
+## Credits
+
+- 原版 [FlappySwift](https://github.com/newlinedotco/FlappySwift) by Nate Murray & Ari Lerner
 - Based on code by [Matthias Gall](http://digitalbreed.com/2014/how-to-build-a-game-like-flappy-bird-with-xcode-and-sprite-kit)
-
